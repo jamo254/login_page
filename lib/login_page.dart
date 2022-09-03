@@ -1,9 +1,5 @@
 
-// ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Login extends StatefulWidget {
@@ -23,20 +19,28 @@ class _LoginState extends State<Login> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              // ignore: prefer_const_constructors
+              Icon(Icons.sports_basketball_sharp,
+              color: Colors.deepOrange,
+              size: 80,
+              ),
+            const SizedBox(
+                height: 10,
+              ),
             Text(
               "Hello There!!",
               style: GoogleFonts.bebasNeue(
                 fontSize: 36,
               )
             ),
-            SizedBox(height: 10,),
-             Text(
+            const SizedBox(height: 10,),
+             const Text(
                 "Welcome back to Sanaa Cafe",
                 style: TextStyle(
                   fontSize: 24,
                 ),
               ),
-               SizedBox(
+               const SizedBox(
                 height: 50,
               ),
 
@@ -48,8 +52,8 @@ class _LoginState extends State<Login> {
                     border: Border.all(color: Colors.white),
                     borderRadius: BorderRadius.circular(12),
                   ),
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 20.0),
+                  child: const Padding(
+                    padding: EdgeInsets.only(left: 20.0),
                     child: TextField(
                       decoration: InputDecoration(
                         border: InputBorder.none,
@@ -60,7 +64,7 @@ class _LoginState extends State<Login> {
                 ),
               ),
 
-               SizedBox(
+               const SizedBox(
                 height: 10,
               ),
               // Password
@@ -83,19 +87,19 @@ class _LoginState extends State<Login> {
                 ),
               ),
   
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               // Signin button
              Padding(
                padding: const EdgeInsets.symmetric(horizontal: 25.0),
                child: Container(
-                 padding: EdgeInsets.all(20),
+                 padding: const EdgeInsets.all(20),
                  decoration: BoxDecoration(
                    color: Colors.deepOrangeAccent,
                  borderRadius: BorderRadius.circular(12),
                  ),
-                 child: Center(
+                 child: const Center(
                    child: Text(
                      'Sign In',
                      style: TextStyle(
@@ -106,7 +110,7 @@ class _LoginState extends State<Login> {
                    )),
                ),
              ),
-              SizedBox(
+              const SizedBox(
                 height: 50,
               ),
               //Check membership
